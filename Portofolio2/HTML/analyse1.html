@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Synthèse des Analyses</title>
+    <style>
+        /* Style de base */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Carte d'analyse */
+        .analysis-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+            background: white;
+        }
+
+        .analysis-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Image avec superposition de texte */
+        .card-image {
+            position: relative;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            width: 100%;
+            padding: 20px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .analysis-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        /* Conclusions */
+        .conclusions {
+            padding: 20px;
+            background: #fff;
+        }
+
+        .conclusion-item {
+            margin: 10px 0;
+            padding-left: 15px;
+            border-left: 3px solid #4CAF50;
+            font-size: 0.95em;
+            color: #444;
+        }
+
+        /* Légende interactive */
+        .caption {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 40px; color: #2c3e50;">Synthèse des Analyses</h1>
+
+    <div class="grid-container">
+        <!-- Analyse 1 -->
+        <div class="analysis-card">
+            <div class="card-image" style="background-image: url('/Portofolio2/Images/Meilleur\ chaine\ en\ terme\ de\ de\ vue\ des\ video\ regroupé\ par\ genre\ et\ par\ année.png')">
+                <div class="caption">Segmentation clients</div>
+                <div class="card-overlay">
+                    <h3 style="margin: 0 0 10px;">Insights clés</h3>
+                    <p style="font-size: 0.9em; line-height: 1.4;">Clusters identifiés : 4 groupes majeurs</p>
+                </div>
+            </div>
+            <div class="conclusions">
+                <div class="conclusion-item">Groupe A : 22% du CA, fidélité élevée</div>
+                <div class="conclusion-item">Groupe C : Potentiel de croissance (+35% possible)</div>
+                <div class="conclusion-item">Segment à risque : 15% de clients inactifs</div>
+            </div>
+        </div>
+
+        <!-- Analyse 2 -->
+        <div class="analysis-card">
+            <div class="card-image" style="background-image: url('/Portofolio2/Images/Courbe_temporelle_creation_chaine.png')">
+                <div class="caption">Tendance des ventes</div>
+                <div class="card-overlay">
+                    <h3 style="margin: 0 0 10px;">Tendances</h3>
+                    <p style="font-size: 0.9em">Saisonnalité marquée en Q4</p>
+                </div>
+            </div>
+            <div class="conclusions">
+                <div class="conclusion-item">Croissance annuelle : +14.5%</div>
+                <div class="conclusion-item">Pic de ventes : 15-22 décembre</div>
+                <div class="conclusion-item">Corrélation météo : +0.72</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
