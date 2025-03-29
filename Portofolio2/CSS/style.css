@@ -21,7 +21,7 @@ iframe {
 }
 
 div.cover {
-    background: url(../Images/cover_overlay.png") no-repeat center/100% 100%,url(../Images/cover.jpg) no-repeat center/cover;
+    background: url("../Images/cover_overlay.png") no-repeat center/100% 100%,url("../Images/cover.jpg") no-repeat center/cover;
     height: 360px;
     position: relative;
 }
@@ -98,13 +98,13 @@ a.contact-button:hover {
 }
 
 div.section-grise1 {
-    background: url(../Images/triangle2white.svg) no-repeat center bottom -1px/100%;
+    background: url("../Images/triangle2white.svg") no-repeat center bottom -1px/100%;
     background-color: #979797;
     padding-bottom: 70px;
 }
 
 div.section-grise2 {
-    background: url(../Images/triangle1white.svg) no-repeat center top/100%;
+    background: url("../Images/triangle1white.svg") no-repeat center top/100%;
     background-color:#979797;
     padding-top: 80px;
 }
@@ -187,7 +187,7 @@ p.frame-title {
 /* PORTFOLIO */
 .portfolio-header {
     height: 90px;
-    background: url(../Images/header.jpg) no-repeat center/cover;
+    background: url("../Images/header.jpg") no-repeat center/cover;
     position: relative;
 }
 
